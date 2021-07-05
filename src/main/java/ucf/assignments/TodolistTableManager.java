@@ -11,7 +11,8 @@ public class TodolistTableManager {
 
     public void add(String text, TableColumn<String, String> toDoListTable) {
         // get the column of the tableView
-        // add the new value to the column the tableview
+        // add the new value to the column the tableview by calling the get items methods of the Observable Collection
+
 
     }
     public void sort(TableView table, TableColumn column){
@@ -73,6 +74,7 @@ public class TodolistTableManager {
     public void newApp() {
         // this allows the user to load multiple file in different application.
         // creates new application with empty data.
+            //
     }
 
     public void open() {

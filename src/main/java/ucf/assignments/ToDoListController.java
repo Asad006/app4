@@ -111,7 +111,7 @@ public class ToDoListController implements Initializable {
 
     @FXML
     void saveItemsMenuClicked(ActionEvent event) {
-        System.out.println("save Items clicked");
+
         // get The variable of the Observable Collection data of the list
         // get the selected cell from observable collection
         // create object of the todoTask
@@ -123,8 +123,7 @@ public class ToDoListController implements Initializable {
     @FXML
     void newMenuClicked(ActionEvent event) {
         // the method new of the todolistTableManager
-        System.out.println("new app clicked");
-        todolistTableManager.newApp();
+
 
     }
 
@@ -132,34 +131,32 @@ public class ToDoListController implements Initializable {
     @FXML
     void openMenuClicked(ActionEvent event) {
         // the method open of the todolistTableManager
-        System.out.println("open  clicked");
-        todolistTableManager.open();
+
     }
 
 
     @FXML
     void closeMenuClicked(ActionEvent event) {
         // the method close of the todolistTableManager
-        System.out.println("close  clicked");
-        todolistTableManager.close();
+
     }
 
     @FXML
     void showCompleteMenuClicked(ActionEvent event) {
-        System.out.println("show complete items  clicked");
+
         // call show showIncompleteItems method of the todolistTableManager.
 
     }
 
     @FXML
     void showIncompleteMenuClicked(ActionEvent event) {
-        System.out.println("incomplete items");
+
         // call show showIncompleteItems method of the todolistTableManager.
 
     }
     @FXML
     void saveTaskMenuClicked(ActionEvent event) {
-        System.out.println("save tasks");
+
         // Get the Observable data collection of the task list
         // call the save function in the ToDoListManager
     }
