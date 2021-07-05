@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -101,6 +102,12 @@
       <Button fx:id="AddTaskButton" layoutX="189.0" layoutY="368.0" mnemonicParsing="false" onAction="#AddTaskButtonClicked" prefHeight="25.0" prefWidth="98.0" text="Add Task" />
       <TextField fx:id="dueDate" layoutX="631.0" layoutY="369.0" prefHeight="25.0" prefWidth="110.0" promptText="YYYY-MM-DD" />
       <Button fx:id="deleteTask" layoutX="14.0" layoutY="30.0" mnemonicParsing="false" onAction="#deleteTaskClicked" prefHeight="25.0" prefWidth="92.0" text="Delete task" />
-      <Button fx:id="deleteItem" layoutX="717.0" layoutY="30.0" mnemonicParsing="false" onAction="#deleteItemClicked" text="Delete Item" />
+      <Button fx:id="deleteItem" layoutX="591.0" layoutY="30.0" mnemonicParsing="false" onAction="#deleteItemClicked" text="Delete Item" />
+      <SplitMenuButton layoutX="669.0" layoutY="30.0" mnemonicParsing="false" text="Set Item Status">
+        <items>
+          <MenuItem fx:id="setStatusIncomplete" mnemonicParsing="false" onAction="#setStatusIncompleteClicked" text="Incomplete" />
+          <MenuItem fx:id="setStatusCompelte" mnemonicParsing="false" onAction="#setStatusCompleteClicked" text="Complete" />
+        </items>
+      </SplitMenuButton>
    </children>
 </AnchorPane>

@@ -109,4 +109,19 @@ class TodolistTableManagerTest {
         // then
         //assertEquals(expectedData,actualData);
     }
+
+    @Test
+    void changeStatus() {
+        // Given
+        // create  an object TodoListTableManager
+        // expectedData observable  collection
+        // add object incomplete item tags.
+        // create identical actualData Observable Collection with complete status.
+
+        // when...
+        // call method changeStatus  to change expectedData
+
+        // then
+        //assertEquals(expectedData,actualData);
+    }
 }

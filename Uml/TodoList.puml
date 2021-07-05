@@ -45,6 +45,10 @@ class ToDoListController {
  + newMenuClicked()
  + openMenuClicked()
  + closeMenuClicked()
+ + setStatusCompleteClicked()
+ + void setStatusIncompleteClicked()
+
+
 
 
 }

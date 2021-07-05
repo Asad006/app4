@@ -127,6 +127,16 @@ public class ToDoListController implements Initializable {
 
     }
 
+    @FXML
+    void setStatusCompleteClicked(ActionEvent event) {
+        // call changeStatus method of the todolistTableManager
+    }
+
+    @FXML
+    void setStatusIncompleteClicked(ActionEvent event) {
+        // call changeStatus method of the todolistTableManager
+        todolistTableManager.changeStatus("incomplate");
+    }
     // Load existing data files
     @FXML
     void openMenuClicked(ActionEvent event) {

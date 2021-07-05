@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 
 public class TodolistTableManager {
     ToDoListApp application = new ToDoListApp();
+
     public void add(String text, TableColumn<String, String> toDoListTable) {
         // get the column of the tableView
         // add the new value to the column the tableview by calling the get items methods of the Observable Collection
@@ -95,6 +96,13 @@ public class TodolistTableManager {
     public void close() {
         // get the instance of the current application from main
         // terminate the main application
+
+    }
+
+    public void changeStatus(String status) {
+        // get the items Tableview
+        // get the status row
+        // set the textField of the cell to the message in status
 
     }
 }
