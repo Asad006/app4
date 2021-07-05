@@ -50,6 +50,16 @@ class TodolistTableManagerTest {
 
     @Test
     void setTableEditable() {
+        // Given
+        // create an object TodoListTableManager
+        // actualData Observable  Collection object set data
+        // create actualData Observable Collection in lexicographic order
+
+        // when...
+        // call setTableEditable() to edit the cell and change it to the expectedData
+
+        // then
+        //assertEquals(expectedData,actualData);
     }
 
     @Test

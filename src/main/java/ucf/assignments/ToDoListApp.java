@@ -10,6 +10,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Observable;
+import java.util.Observer;
 
 public class ToDoListApp extends Application {
 
@@ -32,6 +34,7 @@ public class ToDoListApp extends Application {
             e.printStackTrace();
         }
     }
+
 
 }
 

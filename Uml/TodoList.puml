@@ -1,5 +1,6 @@
 @startuml
 class TodolistTableManager{
+- application : ToDoListApp
 + sortTasks()
 + delete()
 + add()
@@ -81,4 +82,5 @@ ToDoListApp - ToDoListController
 ToDoListController - TaskItem
 ToDoListController - ToDoTask
 ToDoListController *-- TodolistTableManager
+TodolistTableManager *-- ToDoListApp
 @enduml

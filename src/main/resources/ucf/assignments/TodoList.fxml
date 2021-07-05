@@ -28,9 +28,9 @@
         
               <Menu mnemonicParsing="false" text="Display">
                   <items>
-                      <MenuItem fx:id="showCompleteItemsMenu" mnemonicParsing="false" onAction="#showCompleteMenuClicked" text="show complete Items" />
+                      <MenuItem fx:id="showCompleteItemsMenu" mnemonicParsing="false" onAction="#showCompleteMenuClicked" text="Show complete Items" />
 
-                      <MenuItem fx:id="showIncompleteItemsMenu" mnemonicParsing="false" onAction="#showIncompleteMenuClicked" text="show incomplete Items" />
+                      <MenuItem fx:id="showIncompleteItemsMenu" mnemonicParsing="false" onAction="#showIncompleteMenuClicked" text="Show incomplete Items" />
                   </items>
 
               </Menu>

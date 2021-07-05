@@ -3,12 +3,19 @@ package ucf.assignments;
  *  UCF COP3330 Summer 2021 Assignment 4 Solution
  *  Copyright 2021 Asad merouani
  */
+import javafx.application.Platform;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class TodolistTableManager {
-
+    ToDoListApp application = new ToDoListApp();
     public void add(String text, TableColumn<String, String> toDoListTable) {
         // get the column of the tableView
         // add the new value to the column the tableview by calling the get items methods of the Observable Collection
@@ -73,20 +80,24 @@ public class TodolistTableManager {
 
     public void newApp() {
         // this allows the user to load multiple file in different application.
-        // creates new application with empty data.
-            //
+        // creates object from the TodoListApp.
+        // build new stage
+        // call start method of the TodoListApp object
     }
 
     public void open() {
         // open windows dialogue
-        // enable the user navigate in file
+        // enable the user navigate in folders
         // enable the user to select the file
         // open the Json data file
         // load the new data to the interface
+        Stage primaryStage  = new Stage();
+       application.start(primaryStage);
     }
 
     public void close() {
-        // close the window of the application
-        //
+        // get the instance of the current application from main
+        // terminate the main application
+
     }
 }

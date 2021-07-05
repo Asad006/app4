@@ -123,7 +123,7 @@ public class ToDoListController implements Initializable {
     @FXML
     void newMenuClicked(ActionEvent event) {
         // the method new of the todolistTableManager
-
+        todolistTableManager.open();
 
     }
 
@@ -138,6 +138,7 @@ public class ToDoListController implements Initializable {
     @FXML
     void closeMenuClicked(ActionEvent event) {
         // the method close of the todolistTableManager
+
 
     }
 
