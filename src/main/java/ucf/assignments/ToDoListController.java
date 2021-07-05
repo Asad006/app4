@@ -3,14 +3,12 @@ package ucf.assignments;
  *  UCF COP3330 Summer 2021 Assignment 4 Solution
  *  Copyright 2021 Asad merouani
  */
+
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -26,6 +24,30 @@ public class ToDoListController implements Initializable {
 
     @FXML
     private TableView<TaskItem> taskItemTableView;
+
+    @FXML
+    private MenuBar menuBar;
+
+    @FXML
+    private MenuItem closeMenu;
+
+    @FXML
+    private MenuItem newMenu;
+
+    @FXML
+    private MenuItem openMenu;
+
+    @FXML
+    private MenuItem showCompleteItemsMenu;
+
+    @FXML
+    private MenuItem showIncompleteItemsMenu;
+
+    @FXML
+    private MenuItem saveTaskMenu;
+
+    @FXML
+    private MenuItem saveItemsMenu;
 
     @FXML
     private TableColumn toDoColumn;
@@ -59,6 +81,7 @@ public class ToDoListController implements Initializable {
 
     @FXML
     void AddTaskButtonClicked(ActionEvent event) {
+
         // get the the textField content
         // call add method of TodolistManager to set the the new content into the todolist.
         // clear the textField
@@ -68,52 +91,89 @@ public class ToDoListController implements Initializable {
 
     @FXML
     public void addItemClicked(ActionEvent actionEvent) {
+
         // get the the textField content
         // call TodolistManager to set the the new content into the todolist.
         // clear the textField
 
     }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // populates the tableView// ToDat
+        // populates the tableView// has the capacity to store at lease 100 tasks.
         // toDoTaskTableView.getItems();
+        // populates the tableView for items// has the capacity to store at lease 100 items.
         // Set the cells todoTasks  table to be editable
-        // Call setEditable function to make the title changeable.
+        // Call setEditable function to make the title editable.
         // call setEditable function to make description and and due date editable
 
     }
 
-    public void saveTaskClicked(ActionEvent actionEvent) {
-        // Get the Observable data collection of the task list
-        //call the save function in the ToDoListManager
-
-    }
-
-    public void deleteTaskClicked(ActionEvent actionEvent) {
-        //call the method delete of the todolistTaskManager
-
-    }
-
-    public void saveItemClicked(ActionEvent actionEvent) {
-        //get The variable of the Observable Collection data of the list
+    @FXML
+    void saveItemsMenuClicked(ActionEvent event) {
+        System.out.println("save Items clicked");
+        // get The variable of the Observable Collection data of the list
         // get the selected cell from observable collection
         // create object of the todoTask
         // call remove function of the observable collection
-    }
-
-    public void deleteItemClicked(ActionEvent actionEvent) {
-        //call the method delete of the todolistTaskManager
 
     }
 
-    public void showIncompleteClicked(ActionEvent actionEvent) {
+    // Load multiple application with different data files
+    @FXML
+    void newMenuClicked(ActionEvent event) {
+        // the method new of the todolistTableManager
+        System.out.println("new app clicked");
+        todolistTableManager.newApp();
+
+    }
+
+    // Load existing data files
+    @FXML
+    void openMenuClicked(ActionEvent event) {
+        // the method open of the todolistTableManager
+        System.out.println("open  clicked");
+        todolistTableManager.open();
+    }
+
+
+    @FXML
+    void closeMenuClicked(ActionEvent event) {
+        // the method close of the todolistTableManager
+        System.out.println("close  clicked");
+        todolistTableManager.close();
+    }
+
+    @FXML
+    void showCompleteMenuClicked(ActionEvent event) {
+        System.out.println("show complete items  clicked");
         // call show showIncompleteItems method of the todolistTableManager.
 
     }
 
-    public void showCompleteClicked(ActionEvent actionEvent) {
-        // call show showCompleteItems method of the todolistTableManager.
+    @FXML
+    void showIncompleteMenuClicked(ActionEvent event) {
+        System.out.println("incomplete items");
+        // call show showIncompleteItems method of the todolistTableManager.
+
+    }
+    @FXML
+    void saveTaskMenuClicked(ActionEvent event) {
+        System.out.println("save tasks");
+        // Get the Observable data collection of the task list
+        // call the save function in the ToDoListManager
     }
 
+    @FXML
+    public void deleteTaskClicked(ActionEvent actionEvent) {
+        // call the method delete of the todolistTaskManager
+
+    }
+
+    @FXML
+    public void deleteItemClicked(ActionEvent actionEvent) {
+        // call the method delete of the todolistTaskManager
+
+    }
 
 }

@@ -29,8 +29,10 @@ public class TodolistTableManager {
     }
 
 
-    public void setTableEditable(TableColumn toDoColumn) {
+    public void setTableEditable(TableColumn toDoColumn, String columnTittle) {
 
+        // the call of this method will enable the user to edit title of the task
+        // + the description of an item and dueDate
 
         // call SetCellFactory method to make the cell as text field
         // call setOnEditCommit and assign click event to the column
@@ -66,5 +68,23 @@ public class TodolistTableManager {
         // Get all the elements of the Observable collection that has a complete status.
         // Assign the completed items to the New observable collection data.
         // Load the new observable collection data to the TableView To display.
+    }
+
+    public void newApp() {
+        // this allows the user to load multiple file in different application.
+        // creates new application with empty data.
+    }
+
+    public void open() {
+        // open windows dialogue
+        // enable the user navigate in file
+        // enable the user to select the file
+        // open the Json data file
+        // load the new data to the interface
+    }
+
+    public void close() {
+        // close the window of the application
+        //
     }
 }

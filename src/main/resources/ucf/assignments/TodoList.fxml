@@ -14,20 +14,35 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ToDoListController">
    <children>
-      <MenuBar maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="800.0">
+      <MenuBar fx:id="menuBar" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="800.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-              <items>
-                  <MenuItem mnemonicParsing="false" text="New" />
-              </items>
-              <items>
-                  <MenuItem mnemonicParsing="false" text="Open" />
+              <MenuItem fx:id="closeMenu" mnemonicParsing="false" onAction="#closeMenuClicked" text="Close" />
+
+                <MenuItem fx:id="newMenu" mnemonicParsing="false" onAction="#newMenuClicked" text="New" />
+
+                <MenuItem fx:id="openMenu" mnemonicParsing="false" onAction="#openMenuClicked" text="Open" />
               </items>
           </Menu>
-        </menus>
+        
+              <Menu mnemonicParsing="false" text="Display">
+                  <items>
+                      <MenuItem fx:id="showCompleteItemsMenu" mnemonicParsing="false" onAction="#showCompleteMenuClicked" text="show complete Items" />
+
+                      <MenuItem fx:id="showIncompleteItemsMenu" mnemonicParsing="false" onAction="#showIncompleteMenuClicked" text="show incomplete Items" />
+                  </items>
+
+              </Menu>
+
+              <Menu mnemonicParsing="false" text="Save">
+                  <items>
+                      <MenuItem fx:id="saveTaskMenu" mnemonicParsing="false" onAction="#saveTaskMenuClicked" text="Save Tasks" />
+                      <MenuItem fx:id="saveItemsMenu" mnemonicParsing="false" onAction="#saveItemsMenuClicked" text="Save Items" />
+                  </items>
+
+              </Menu>
+          </menus>
       </MenuBar>
       <SplitPane dividerPositions="0.0038071065989847717, 0.3756345177664975" layoutX="7.0" layoutY="55.0" prefHeight="312.0" prefWidth="790.0">
         <items>
@@ -85,11 +100,7 @@
       <TextField fx:id="addToDoListText" layoutX="14.0" layoutY="368.0" prefHeight="25.0" prefWidth="169.0" promptText="Task title" />
       <Button fx:id="AddTaskButton" layoutX="189.0" layoutY="368.0" mnemonicParsing="false" onAction="#AddTaskButtonClicked" prefHeight="25.0" prefWidth="98.0" text="Add Task" />
       <TextField fx:id="dueDate" layoutX="631.0" layoutY="369.0" prefHeight="25.0" prefWidth="110.0" promptText="YYYY-MM-DD" />
-      <Button fx:id="saveTask" layoutX="134.0" layoutY="29.0" mnemonicParsing="false" onAction="#saveTaskClicked" text="Save" />
-      <Button fx:id="deleteTask" layoutX="183.0" layoutY="29.0" mnemonicParsing="false" onAction="#deleteTaskClicked" text="Delete" />
-      <Button fx:id="saveItem" layoutX="340.0" layoutY="29.0" mnemonicParsing="false" onAction="#saveItemClicked" prefHeight="25.0" prefWidth="92.0" text="Save Item" />
-      <Button fx:id="deleteItem" layoutX="437.0" layoutY="29.0" mnemonicParsing="false" onAction="#deleteItemClicked" text="Delete Item" />
-      <Button fx:id="showIncomplete" layoutX="527.0" layoutY="29.0" mnemonicParsing="false" onAction="#showIncompleteClicked" prefHeight="25.0" prefWidth="117.0" text="Show Incomplete" />
-      <Button fx:id="showCompelte" layoutX="660.0" layoutY="29.0" mnemonicParsing="false" onAction="#showCompleteClicked" text="Show Complte" />
+      <Button fx:id="deleteTask" layoutX="14.0" layoutY="30.0" mnemonicParsing="false" onAction="#deleteTaskClicked" prefHeight="25.0" prefWidth="92.0" text="Delete task" />
+      <Button fx:id="deleteItem" layoutX="717.0" layoutY="30.0" mnemonicParsing="false" onAction="#deleteItemClicked" text="Delete Item" />
    </children>
 </AnchorPane>

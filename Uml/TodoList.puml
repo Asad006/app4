@@ -7,6 +7,9 @@ class TodolistTableManager{
 + displayUncompletedTasks()
 + displayCompletedTasks()
 + save()
++ new()
++ close()
++ open()
 }
 
 class ToDoListController {
@@ -30,18 +33,24 @@ class ToDoListController {
     - dueDate: TextField
 
  + initialize()
- + AddTaskButtonClicked()
- + saveTaskClicked()
+ + AddTaskMenuClicked()
+ + saveTaskMenuClicked()
  + deleteTaskClicked()
- + saveItemClicked()
+ + addItemButtonClicked()
+ + saveItemMenuClicked()
  + deleteItemClicked()
- + showCompleteClicked()
- + showInCompleteClicked()
+ + showCompleteMenuClicked()
+ + showInCompleteMenuClicked()
+ + newMenuClicked()
+ + openMenuClicked()
+ + closeMenuClicked()
+
 
 }
 
 class ToDoTask{
-+ ToDoTask(String)
+- taskTitle: String
++ ToDoTask()
 + getToDoTitle()
 + setToDoTitle()
 }
