@@ -35,20 +35,6 @@ class TodolistTableManagerTest {
     }
 
     @Test
-    void save() {
-        // Given
-        // create an object TodoListTableManager
-        // actualData Observable  Collection object set data
-        // create actualData Observable Collection in lexicographic order
-
-        // when...
-        // call method sort to sort expectedData
-
-        // then
-        //assertEquals(expectedData,actualData);
-    }
-
-    @Test
     void setTableEditable() {
         // Given
         // create an object TodoListTableManager

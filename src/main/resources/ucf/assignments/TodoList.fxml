@@ -39,7 +39,7 @@
 
               <Menu mnemonicParsing="false" text="Save">
                   <items>
-                      <MenuItem fx:id="saveTaskMenu" mnemonicParsing="false" onAction="#saveTaskMenuClicked" text="Save Tasks" />
+                      <MenuItem fx:id="saveTaskMenu" mnemonicParsing="false" onAction="#saveTaskMenuClicked" text="Save items and Tasks" />
                       <MenuItem fx:id="saveItemsMenu" mnemonicParsing="false" onAction="#saveItemsMenuClicked" text="Save Items" />
                   </items>
 
