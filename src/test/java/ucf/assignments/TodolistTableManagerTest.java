@@ -63,7 +63,6 @@ class TodolistTableManagerTest {
         // then
         //assertEquals(expectedData,actualData);
 
-
     }
 
     @Test
@@ -79,6 +78,7 @@ class TodolistTableManagerTest {
 
         // then
         //assertEquals(expectedData,actualData);
+
     }
 
     @Test
@@ -94,6 +94,7 @@ class TodolistTableManagerTest {
 
         // then
         //assertEquals(expectedData,actualData);
+
     }
 
     @Test
@@ -109,6 +110,7 @@ class TodolistTableManagerTest {
 
         // then
         //assertEquals(expectedData,actualData);
+
     }
 
     @Test
@@ -123,5 +125,6 @@ class TodolistTableManagerTest {
 
         // then
         //assertEquals(expectedData,actualData);
+
     }
 }
