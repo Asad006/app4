@@ -3,16 +3,14 @@ package ucf.assignments;
  *  UCF COP3330 Summer 2021 Assignment 4 Solution
  *  Copyright 2021 Asad merouani
  */
-import javafx.application.Platform;
+
 import javafx.collections.ObservableList;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+
 
 public class TodolistTableManager {
     ToDoListApp application = new ToDoListApp();
