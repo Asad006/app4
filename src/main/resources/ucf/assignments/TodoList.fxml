@@ -32,6 +32,7 @@
                       <MenuItem fx:id="showCompleteItemsMenu" mnemonicParsing="false" onAction="#showCompleteMenuClicked" text="Show complete Items" />
 
                       <MenuItem fx:id="showIncompleteItemsMenu" mnemonicParsing="false" onAction="#showIncompleteMenuClicked" text="Show incomplete Items" />
+                      <MenuItem fx:id="showAllItemsItemsMenu" mnemonicParsing="false" onAction="#showAllItemsMenuClicked" text="Show All Items" />
                   </items>
 
               </Menu>

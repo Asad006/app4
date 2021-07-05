@@ -124,4 +124,18 @@ class TodolistTableManagerTest {
         // then
         //assertEquals(expectedData,actualData);
     }
+
+    @Test
+    void showAllItems() {
+        // Given
+        // create  an object TodoListTableManager
+        // expectedData observable  collection
+        // create identical actualData Observable Collection with expected.
+
+        // when...
+        // call method changeStatus  to change expectedData
+
+        // then
+        //assertEquals(expectedData,actualData);
+    }
 }

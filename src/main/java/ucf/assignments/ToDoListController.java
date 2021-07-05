@@ -163,7 +163,11 @@ public class ToDoListController implements Initializable {
     void showIncompleteMenuClicked(ActionEvent event) {
 
         // call show showIncompleteItems method of the todolistTableManager.
-
+    }
+    @FXML
+    void showAllItemsMenuClicked(ActionEvent event) {
+        // call show showAllItems method of the todolistTableManager.
+        todolistTableManager.showAllItems();
     }
     @FXML
     void saveTaskMenuClicked(ActionEvent event) {

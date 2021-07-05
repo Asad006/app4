@@ -95,7 +95,7 @@ public class TodolistTableManager {
 
     public void close() {
         // get the instance of the current application from main
-        // terminate the main application
+        // terminate the platform application
 
     }
 
@@ -104,5 +104,10 @@ public class TodolistTableManager {
         // get the status row
         // set the textField of the cell to the message in status
 
+    }
+
+    public void showAllItems() {
+        // Get Observable Collection data of the list.
+        // Load the  observable collection data to the TableView To display.
     }
 }
