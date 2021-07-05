@@ -89,8 +89,7 @@ public class TodolistTableManager {
         // enable the user to select the file
         // open the Json data file
         // load the new data to the interface
-        Stage primaryStage  = new Stage();
-       application.start(primaryStage);
+
     }
 
     public void close() {
